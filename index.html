@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jahn's Ride Sharing</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", "Poppins", sans-serif;
+      background: #ffeef0;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #ffccd5, #ff8fa3);
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav {
+      background: #ff4d6d;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      font-weight: bold;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    section {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      border-left: 10px solid #ff4d6d;
+      padding-left: 15px;
+      font-size: 26px;
+    }
+    .vehicle-card, .info-card {
+      border: 3px solid #ff4d6d;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 25px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .login-box, .register-box, .payment-box, .direction-box {
+      border: 3px dashed #ff4d6d;
+      padding: 25px;
+      border-radius: 15px;
+      background: #fff;
+      margin-bottom: 30px;
+    }
+    footer {
+      background: #ff4d6d;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 18px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #ff4d6d;
+      font-size: 16px;
+    }
+    button {
+      background: #ff4d6d;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jahn's Ride Sharing</h1>
+    <p>Your friendly and safe‑styled ride partner</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#cars">Cars</a>
+    <a href="#bikes">Bikes</a>
+    <a href="#scooty">Scooty</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#safety">Safety</a>
+    <a href="#payment">Payment</a>
+    <a href="#directions">Directions</a>
+    <a href="#login">Login</a>
+    <a href="#register">Register</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Jahn's Ride Sharing Platform </h2>
+    <p>Choose your ride from different categories, smooth booking system and safe monitored rides.</p>
+  </section>
+
+  <section id="cars">
+    <h2>Cars</h2>
+    <div class="vehicle-card"><h3>Hatchback</h3><p>Best for short distance rides, friendly seating.</p></div>
+    <div class="vehicle-card"><h3>Sedan</h3><p>Spacious, premium rides for comfort lovers.</p></div>
+    <div class="vehicle-card"><h3>SUV</h3><p>Powerful and reliable for long distance and multiple passengers.</p></div>
+  </section>
+
+  <section id="bikes">
+    <h2>Bikes</h2>
+    <div class="vehicle-card"><h3>Standard Bike</h3><p>Best for quick rides, easy traffic navigation.</p></div>
+    <div class="vehicle-card"><h3>Premium Bike</h3><p>Advanced design with better suspension.</p></div>
+  </section>
+
+  <section id="scooty">
+    <h2>Scooty</h2>
+    <div class="vehicle-card"><h3>Electric Scooty</h3><p>Eco friendly, budget friendly and silent.</p></div>
+    <div class="vehicle-card"><h3>Petrol Scooty</h3><p>Lightweight and perfect for daily rides.</p></div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <ul>
+      <li>BMW – ₹12/km</li>
+      <li>Tata Tiago – ₹15/km</li>
+      <li>Skoda – ₹20/km</li>
+      <li>Bikes – ₹8 to ₹12/km</li>
+      <li>Scooty – ₹7 to ₹9/km</li>
+    </ul>
+  </section>
+
+  <section id="safety">
+    <h2>Safety Precautions</h2>
+    <div class="info-card">
+      <ul>
+        <li>All vehicles are GPS‑tracked in real‑time.</li>
+        <li>Verified drivers with ID authentication.</li>
+        <li>Emergency SOS button available in rides.</li>
+        <li>Regular sanitisation of vehicles.</li>
+        <li>Helmet provided with bike/scooty rides.</li>
+        <li>Speed monitoring and live route sharing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="payment">
+    <h2>Payment Portal</h2>
+    <div class="payment-box">
+      <p>Choose your method:</p>
+      <ul>
+        <li>UPI</li>
+        <li>Card Payment</li>
+        <li>Cash Ride Option</li>
+      </ul>
+      <input type="text" placeholder="Enter UPI ID / Card Number" />
+      <button>Pay Now</button>
+    </div>
+  </section>
+
+  <section id="directions">
+    <h2>Ride Directions</h2>
+    <div class="direction-box">
+      <p>Enter pickup and drop location:</p>
+      <input type="text" placeholder="Pickup Location" />
+      <input type="text" placeholder="Drop Location" />
+      <button>Show Route</button>
+      <p>Interactive map will appear here (embed supported).</p>
+    </div>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <div class="login-box">
+      <input type="text" placeholder="Email or Username" />
+      <input type="password" placeholder="Password" />
+      <button>Login</button>
+    </div>
+  </section>
+
+  <section id="register">
+    <h2>Register</h2>
+    <div class="register-box">
+      <input type="text" placeholder="Full Name" />
+      <input type="email" placeholder="Email" />
+      <input type="text" placeholder="Mobile Number" />
+      <input type="password" placeholder="Create Password" />
+      <button>Register</button>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: jahnavi9@gmail.com</p>
+    <p>Phone: 9440022366</p>
+    <p>Discord: Jah_navi</p>
+  </section>
+
+  <footer>
+     2025 Jahn's Ride Sharing. All Rights Reserved.
+  </footer>
+</body>
+</html>
